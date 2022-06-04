@@ -5,13 +5,13 @@ const NavBar = () => {
         <nav>
             <CartWidget />
             <ul>
-            <div class="button-row">
-            <div><a href="" title="Inicio"> </a></div>
-            <div><a href="" title="Nuevos Ingresos"> </a></div>
-            <div><a href="" title="Catálogo"> </a></div>
-            <div><a href="" title="Outfits"> </a></div>
-            <div><a href="" title="Packs"> </a></div>
-            <div><a href="" title="Outlet"> </a></div>
+            <div className="button-row">
+            <div><a href="http://localhost:3000/" title="Inicio"> </a></div>
+            <div><a href="http://localhost:3000/" title="Nuevos Ingresos"> </a></div>
+            <div><a href="http://localhost:3000/" title="Catálogo"> </a></div>
+            <div><a href="http://localhost:3000/" title="Outfits"> </a></div>
+            <div><a href="http://localhost:3000/" title="Packs"> </a></div>
+            <div><a href="http://localhost:3000/" title="Outlet"> </a></div>
             </div>
             </ul>
         </nav>

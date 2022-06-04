@@ -1,6 +1,6 @@
 const CartWidget = (props) => {
     return (
-            <img src="/SYNGEN.jpg" class="logoSyn brand"/>
+            <img src="/SYNGEN.jpg" alt="logo" className="logoSyn brand"/>
     )
 }
  
