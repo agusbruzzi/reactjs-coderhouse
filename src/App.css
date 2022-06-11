@@ -7,6 +7,47 @@
   max-height: 450px;
 }
 
+.imgDetail{
+  max-width: 100%;
+  max-height: 480px;
+  margin: 20px 50px 20px 50px;
+  float: left;  
+  display: flex;
+}
+
+.itemDetailContainer{
+  box-shadow: 2px 2px 2px  2px #b5b5b5;
+  width: 1200px;
+  height: 500px;
+  margin: 50px 150px 20px 150px;
+  background-color: #ece4ec;
+
+}
+
+.nameProduct{
+  font-family: 'Mohave', sans-serif;
+  font-weight: 0px;
+  font-size: 40px;
+  padding-top: 70px;
+  padding-left: 540px;
+  text-align: left;
+}
+
+.detailItemProduct{
+  font-family: 'Jura', sans-serif;
+    font-size: 15px;
+    text-align: left;
+    padding: 0px 100px 0px 540px;
+  }
+
+
+.priceProduct{
+  font-family: 'Jura', sans-serif;
+  font-size: 30px;
+  text-align: left;
+  padding: 0px 100px 0px 540px;
+}  
+
 .divItem{
   background-color: #ece4ec    ;
   display: inline-block;
@@ -73,6 +114,18 @@ nav{
   }
 }
 
+.detail{
+  text-decoration: none;
+  color: white;
+  font-family: 'Mohave', sans-serif;
+
+}
+.detailProduct{
+  background-color: #b5b5b5;
+  height: 30px;
+  padding-top: 10px;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -96,87 +149,19 @@ nav{
     transform: rotate(360deg);
   }
 }
-
-
 .button-row {
-  display: -webkit-inline-box;
-  display: -moz-inline-box;
-  display: inline-box;
-  display: -webkit-inline-flex;
-  display: -moz-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
 }
 .button-row > div {
-  position: relative;
-  width: 160px;
-  height: 50px;
-  margin: 0 0px;
-  -webkit-perspective: 1000px;
-  -moz-perspective: 1000px;
-  perspective: 1000px;
+position: relative;
+width: 160px;
+height: 60px;
+margin: 0 0px;
 }
-.button-row > div > a {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
-  -ms-transform-style: preserve-3d;
-  -o-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  -webkit-transform: translateZ(-25px);
-  -moz-transform: translateZ(-25px);
-  -ms-transform: translateZ(-25px);
-  -o-transform: translateZ(-25px);
-  transform: translateZ(-25px);
-  -webkit-transition: -webkit-transform 0.25s;
-  -moz-transition: -moz-transform 0.25s;
-  transition: transform 0.25s;
-}
-.button-row > div > a::before, .button-row > div > a::after {
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  width: 160px;
-  height: 50px;
-  position: absolute;
-  border: 5px solid black;
-  box-sizing: border-box;
-  content: attr(title);
-  display: -webkit-box;
-  display: -moz-box;
-  display: flex;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-.button-row > div > a::before {
-  background-color: #000;
-  color: #fff;
-  -webkit-transform: rotateY(0deg) translateZ(25px);
-  -moz-transform: rotateY(0deg) translateZ(25px);
-  -ms-transform: rotateY(0deg) translateZ(25px);
-  -o-transform: rotateY(0deg) translateZ(25px);
-  transform: rotateY(0deg) translateZ(25px);
-}
-.button-row > div > a::after {
-  background-color: #fff;
-  border-color: #000;
-  color: #000;
-  -webkit-transform: rotateX(90deg) translateZ(25px);
-  -moz-transform: rotateX(90deg) translateZ(25px);
-  -ms-transform: rotateX(90deg) translateZ(25px);
-  -o-transform: rotateX(90deg) translateZ(25px);
-  transform: rotateX(90deg) translateZ(25px);
-}
-.button-row > div > a:hover {
-  -webkit-transform: translateZ(-25px) rotateX(-90deg);
-  -moz-transform: translateZ(-25px) rotateX(-90deg);
-  -ms-transform: translateZ(-25px) rotateX(-90deg);
-  -o-transform: translateZ(-25px) rotateX(-90deg);
-  transform: translateZ(-25px) rotateX(-90deg);
+.button-row > div > p {
+margin: 0;
+padding: 0;
+width: 100%;
+height: 100%;
+position: absolute;
 }

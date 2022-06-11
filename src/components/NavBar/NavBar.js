@@ -1,18 +1,17 @@
 import CartWidget from "../CartWidget/CartWidget"
+import { Link } from "react-router-dom"
 
 const NavBar = () => {
     return (
         <nav>
-            <CartWidget />
+            <Link to='/'><CartWidget /></Link>
             <ul>
-            <div className="button-row">
-            <div><a href="http://localhost:3000/" title="Inicio"> </a></div>
-            <div><a href="http://localhost:3000/" title="Catálogo"> </a></div>
-            <div><a href="http://localhost:3000/" title="Outfits"> </a></div>
-            <div><a href="http://localhost:3000/" title="Packs"> </a></div>
-            <div><a href="http://localhost:3000/" title="Maxicombos"> </a></div>
-            <div><a href="http://localhost:3000/" title="Contacto"> </a></div>
-            </div>
+            <Link className="button-row" to='/'><div><p>Inicio</p></div></Link>
+            <Link className="button-row" to='/category/buzos-remeras'><div><p>Buzos & Remeras</p></div></Link>
+            <Link className="button-row" to='/category/jeans-pants'><div><p>Jeans & Pants</p></div></Link>
+            <Link className="button-row" to='/category/outfits'><div><p>Outfits</p></div></Link>
+            <Link className="button-row" to='/category/maxicombos'><div><p>Maxicombos</p></div></Link>
+            <Link className="button-row" to='/category/accesorios'><div><p>Accesorios</p></div></Link>
             </ul>
         </nav>
     )
