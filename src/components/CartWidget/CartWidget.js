@@ -1,4 +1,4 @@
-const CartWidget = (props) => {
+const CartWidget = () => {
     return (
             <img src="/SYNGEN.jpg" alt="logo" className="logoSyn brand"/>
     )

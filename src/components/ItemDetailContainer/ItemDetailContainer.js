@@ -10,8 +10,7 @@ const ItemDetailContainer = () => {
         getProductsById(params.productId).then(response => {
             setProduct(response)
         })
-    },[])
-    console.log(params.productId)
+    },[params.productId])
 
     return (
         <>

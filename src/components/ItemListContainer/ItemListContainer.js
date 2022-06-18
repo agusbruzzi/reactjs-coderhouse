@@ -7,8 +7,7 @@ const ItemListContainer = () => {
     const [products, setProducts] = useState([])
 
     const {category} = useParams()
-    console.log(category)
-
+    
     useEffect(() =>{
         if(!category){
             getProducts().then(response => {
