@@ -1,10 +1,12 @@
 import ButtonCount from "../ButtonCount/ButtonCount"
-const ItemDetail = ({name, price, img, stock, description}) => {
+import { useContext } from 'react';
+import CartContext from "../../context/CartContext";
+const ItemDetail = ({id, name, price, img, stock, description}) => {
 
+    const {addItem} = useContext(CartContext)
     const handleOnAdd = (count) => {
-        console.log(count)
-    }
-
+        addItem({id, name, price, count})
+    } 
 
     return (
         <div>
