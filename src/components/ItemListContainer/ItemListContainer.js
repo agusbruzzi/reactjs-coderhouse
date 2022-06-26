@@ -1,7 +1,8 @@
 import {useState , useEffect} from 'react'
-import { getProducts, getProductsByCategory } from '../../asynmock'
 import ItemList from '../ItemList/ItemList'
 import { useParams } from "react-router-dom"
+import { getDocs, collection, query, where } from "firebase/firestore"
+import { db } from '../../services/firebase'
 
 const ItemListContainer = () => {
     const [products, setProducts] = useState([])
@@ -10,23 +11,23 @@ const ItemListContainer = () => {
     
     useEffect(() =>{
         setloading(true)
-        if(!category){
-            getProducts().then(response => {
-                setProducts(response)
-            }).finally(() => {
-                setloading(false)
+
+        const collectionRef = category ? (
+            query(collection(db, 'items'), where('category', '==', category))
+        ) : (collection(db, 'items'))
+
+        getDocs(collectionRef).then(response =>{
+            const productsFS = response.docs.map(doc =>{
+                return {id: doc.id,
+                        ...doc.data()}
             })
-        } else{
-            getProductsByCategory(category).then(response => {
-                setProducts(response)
-            }).finally(()=>{
-                setloading(false)
-            })
-        }
+            setProducts(productsFS)
+        }).finally(()=>{
+            setloading(false)
+        })
     }, [category])
 
     if(loading){
-        //<div className="spinner"></div>
         return <div className='loading'><div className="spinner"></div></div>
     }
 
@@ -34,7 +35,6 @@ const ItemListContainer = () => {
         <div className='itemListContainer'>
             <ItemList products={products}/>
         </div>
-        
     )
 }
  

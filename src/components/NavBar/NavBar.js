@@ -13,7 +13,7 @@ const NavBar = () => {
             <Link className="button-row" to='/category/outfits'><div><p>Outfits</p></div></Link>
             <Link className="button-row" to='/category/maxicombos'><div><p>Maxicombos</p></div></Link>
             <Link className="button-row" to='/category/accesorios'><div><p>Accesorios</p></div></Link>
-            <CartWidget/>
+            <Link to='/cart'><CartWidget/></Link>
             </ul>
         </nav>
     )
