@@ -194,6 +194,7 @@ nav{
   font-family: 'Mohave', sans-serif;
   font-size: 13px;
   margin-top: 80px;
+  display: inline-block;
 }
 .textfooter{
   padding-top: 40px;
@@ -294,4 +295,154 @@ position: absolute;
   width: 100%;
   height: 500px;
   position: relative;
+}
+.titleCarrito{
+  left: 50%;
+  margin-top: 50px;
+  font-family: 'Rubik', sans-serif;
+  font-size: 40px;
+}
+.divCartAttributes{
+  background-color: white;
+  height: 45px;
+  border-bottom: 2px #b5b5b5 ;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-style: solid;
+  font-family: 'Rubik', sans-serif;
+  font-size: 13px;
+  color: #b5b5b5;
+  margin: 0px 100px;
+}
+
+.categoryCart{
+  display: inline;
+}
+
+.product{
+float: left;
+text-align: left;
+margin-left: 50px;
+width: 600px;
+}
+
+.price{
+  float: left;
+  text-align: center;
+  width: 150px;
+}
+.count{
+  float: left;
+  text-align: center;
+  width: 150px;
+}
+.subtotal{
+  float: left;
+  text-align: center;
+  width: 150px;
+}
+.imgCart{
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin: 5px 30px 40px 50px;
+}
+.nameDescription{
+  display: inline;
+  float: left;
+  width: 420px;
+  text-align: left;
+  line-height: 130px;
+}
+.nameLink{
+  font-size: 15px;
+  color: black;
+  text-decoration: none;
+  font-family: 'Rubik', sans-serif;
+}
+.nameLink:hover{
+  text-decoration: underline;
+}
+.priceDescription{
+  display: inline;
+  width: 150px;
+  line-height: 120px;
+  font-family: 'Rubik', sans-serif;
+  font-size: 15px;
+}
+.countDescription{
+  display: inline;
+  width: 150px;
+  line-height: 120px;
+  font-family: 'Rubik', sans-serif;
+  font-size: 15px;
+}
+.divCartItem{
+  margin: 10px 100px;
+  display:flex;
+}
+.imgtrash{
+  width: 25px;
+  height: 25px;
+  margin-top: 70px;
+  margin-left: 62px;
+}
+
+.divCartFinish{
+  width: 400px;
+  float: right;
+  margin-right: 200px;
+  border-top: 2px #b5b5b5 ;
+  border-bottom: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-style: solid;
+}
+.total{
+  font-family: 'Rubik', sans-serif;
+  font-size: 18px;
+  color: #b5b5b5;
+  float: left;
+  width: 150px;
+  text-align: left;
+}
+.numbertotal{
+  font-family: 'Rubik', sans-serif;
+  font-size: 20px;
+  color: black;
+  float: right;
+  width: 150px;
+}
+.finalizarCompra{
+  width: 400px;
+  float: right;
+  margin-right: 0px;
+  background-color: black;
+  color: white;
+  font-family: 'Rubik', sans-serif;
+  font-size: 18px;
+  padding: 10px 0px;
+}
+.cartEmpty{
+  height: 470px;
+}
+.comeback{
+  color: white;
+  font-family: 'Rubik', sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  background-color: black;
+  padding: 10px 60px;
+}
+.comeback:hover{
+  text-decoration: underline;
+}
+.empty{
+  margin-bottom: 50px;
+  margin-top: 130px;
+  font-size: 30px;
+}
+.cartempty{
+  background-color: black;
 }

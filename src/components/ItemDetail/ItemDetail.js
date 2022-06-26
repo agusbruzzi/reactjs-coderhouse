@@ -7,7 +7,7 @@ const ItemDetail = ({id, name, price, img, stock, description}) => {
     const [countAdded, setCountAdded] = useState(0)
     const {addItem} = useContext(CartContext)
     const handleOnAdd = (count) => {
-        addItem({id, name, price, count})
+        addItem({id, name, img, price, count})
         setCountAdded(count)
     } 
 
