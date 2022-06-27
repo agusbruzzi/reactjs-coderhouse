@@ -16,11 +16,10 @@
 }
 
 .itemDetailContainer{
-  box-shadow: 2px 2px 2px  2px #b5b5b5;
   width: 1200px;
   height: 500px;
   margin: 50px 150px 20px 150px;
-  background-color: #ece4ec;
+  background-color: white;
 
 }
 
@@ -35,7 +34,7 @@
 }
 
 .detailItemProduct{
-  font-family: 'Jura', sans-serif;
+  font-family: 'Rubik', sans-serif;
     font-size: 15px;
     text-align: left;
     padding: 0px 100px 0px 540px;
@@ -44,7 +43,7 @@
 
 
 .priceProduct{
-  font-family: 'Jura', sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-size: 30px;
   text-align: left;
   padding: 0px 100px 0px 540px;
@@ -53,41 +52,50 @@
 }
 
 .buttonsCount{
-  padding: 0px 100px 0px 120px;
-  float: left;  
-
+  width: 340px;
+  float: right;  
+  background-color: white;
+  margin-right: 330px;
 }
 
 .buttonCount{
-  background-color:  #413c41 ;
+  background-color:  black ;
   border: none;
   color: white;
   display: inline;
-  width: 35px;
-  height: 35px;
+  width: 40px;
+  height: 40px;
   font-size: 25px;
 }
 
 .textCount{
-  display: inline;
+  min-inline-size: 120px;
+  padding-inline-start: 110px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display:inline-flex;
   background: white;
-  padding: 0px 50px;
   border-style: solid;
-  border-color:  #413c41 ;
+  border-color:  black ;
   border-width: 1.5px;
-  font-size: 22px;
-  font-family: 'Mohave', sans-serif;
+  font-size: 20px;
+  font-family: 'Rubik', sans-serif;
 }
 
 .buttonOnAdd{
-  background-color:  #413c41 ;
-border: none;
+  background-color:  black ;
+  border: none;
   color: white;
-  width: 190px;
-  height: 35px;
+  width: 310px;
+  height: 40px;
   font-family: 'Mohave', sans-serif;
   font-size: 15px;
-  margin-top: 5px;
+}
+
+.avisoStock{
+  font-family: 'Rubik', sans-serif;
+  color: #6e6b6b;
+  margin: 0px;
 }
 
 .finish{
@@ -193,8 +201,9 @@ nav{
   height: 90px;
   font-family: 'Mohave', sans-serif;
   font-size: 13px;
-  margin-top: 80px;
-  display: inline-block;
+  position:static; /*mantener el footer abajo*/
+  bottom: 0;
+  margin-top: 50px;
 }
 .textfooter{
   padding-top: 40px;
@@ -305,7 +314,7 @@ position: absolute;
 .divCartAttributes{
   background-color: white;
   height: 45px;
-  border-bottom: 2px #b5b5b5 ;
+  border-bottom: 1px #b5b5b5 ;
   border-top: 0px;
   border-left: 0px;
   border-right: 0px;
@@ -393,7 +402,7 @@ width: 600px;
   width: 400px;
   float: right;
   margin-right: 200px;
-  border-top: 2px #b5b5b5 ;
+  border-top: 1px #b5b5b5 ;
   border-bottom: 0px;
   border-left: 0px;
   border-right: 0px;
@@ -445,4 +454,59 @@ width: 600px;
 }
 .cartempty{
   background-color: black;
+}
+.informationDetail{
+  margin-top: 70px;
+  display: inline-block;}
+.cartWidht{
+  display: inline-block;
+}
+.itemsInformationDetail{
+  width: 21%;
+  margin-left: 200px;
+  float: left;
+  
+}
+.contentInformationDetail{
+  width: 50%;
+  float: right;
+  margin-right: 150px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  border-left: 1px #b5b5b5 ;
+  border-bottom: 0px;
+  border-top: 0px;
+  border-right: 0px;
+  border-style: solid;
+  padding-left: 60px;}
+.itemsOptions{
+  font-family: 'Rubik', sans-serif;
+  text-decoration: underline;
+  font-size: 17px;
+  width: 250px;
+  margin-left: 30px;
+  margin-top: 70px;
+  text-align: left;
+}
+.itemsOptions:hover{
+  text-decoration: none;
+}
+.desc{
+  max-width: 800px;
+}
+.title{
+  font-family: 'Rubik', sans-serif;
+  font-size: 30px;
+  text-align: left;
+}
+.title2{
+  font-family: 'Rubik', sans-serif;
+  font-size: 25px;
+  text-align: left;
+  font-weight: bold;
+}
+.textdetails{
+  font-family: 'Rubik', sans-serif;
+  font-size: 15px;
+  text-align: left;
 }

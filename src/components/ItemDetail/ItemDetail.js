@@ -1,4 +1,5 @@
 import ButtonCount from "../ButtonCount/ButtonCount"
+import InformationDetail from "../InformationDetail/InformationDetail";
 import { useState, useContext } from 'react';
 import CartContext from "../../context/CartContext";
 import { Link } from "react-router-dom";
@@ -23,6 +24,8 @@ const ItemDetail = ({id, name, price, img, stock, description}) => {
                 : 
                 <Link to='/cart'><button className="finish">Terminar Compra</button></Link>}
         </div>
+        <InformationDetail />
+
         </div>
     )
 }

@@ -1,9 +1,9 @@
 import './App.css';
 import NavBar from './components/NavBar/NavBar';
+import Footer from './components/Footer/footer';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 import Cart from './components/Cart/Cart';
-import Footer from './components/Footer/footer';
 import { BrowserRouter, Routes, Route} from 'react-router-dom'
 import { CartProvider } from './context/CartContext'
 
@@ -19,7 +19,7 @@ function App() {
               <Route path='/detail/:productId' element={<ItemDetailContainer/>}/>
               <Route path='/cart' element={<Cart/>} />
             </Routes>
-            <Footer/>
+            <Footer />
             </BrowserRouter>
       </CartProvider>
     </div>

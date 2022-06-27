@@ -15,9 +15,7 @@ const Cart = () => {
                     <Link to='/' className="comeback">Volver a la Tienda</Link>
                 </div>
                 :
-                <CartListContainer total={total}/>
-            
-        
+                <CartListContainer total={total}/>        
     )
 }
 export default Cart 

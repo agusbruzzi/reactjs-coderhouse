@@ -11,8 +11,9 @@ const ButtonCount = ({ onAdd, stock, initial = 0}) => {
 
     return (
         <div className="buttonsCount">
+            <h6 className="avisoStock">Solo quedan {stock} disponibles*</h6>
             <button className="buttonCount" onClick={decrementCount}>-</button>
-            <div className="textCount">{count}</div>
+            <h1 className="textCount">{count}</h1>
             <button className="buttonCount" onClick={incrementCount}>+</button><br/>
             <button className="buttonOnAdd" onClick={() => onAdd(count)}>Agregar al carrito</button>
         </div>
