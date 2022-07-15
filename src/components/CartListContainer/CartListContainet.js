@@ -1,9 +1,14 @@
 import CartContext from "../../context/CartContext"
 import CartItemList from "../CartItemList/CartItemList"
 import { useContext } from "react"
+import { Link } from "react-router-dom";
+
+
 
 const CartListContainer = ({total}) => {
     const {cart} = useContext(CartContext)
+
+    
 
     return(
         <div className="cartWidht">
@@ -21,7 +26,7 @@ const CartListContainer = ({total}) => {
             <div className="divCartFinish">
                 <h2 className="categoryCart total">Total:</h2>
                 <h2 className="categoryCart numbertotal">${total}</h2>
-                <h2 className="finalizarCompra">Finalizar Compra</h2>
+                <Link to='/checkout'><button className="finalizarCompra">Finalizar Compra</button></Link>
             </div>
         </div>
         
